@@ -90,7 +90,21 @@ body {
   }
 }
 
-#player {
+#player-playlist {
   width: 100%;
-  height: 500px;
+}
+
+.header-logo {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.main-header {
+  font-weight: 100;
+  margin: 0;
 }
