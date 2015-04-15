@@ -129,12 +129,20 @@ body {
 }
 
 .playlist-item {
+  border-bottom: 1px solid #EBEBEB;
+  display: flex;
+  align-items: center;
   list-style: none;
   padding: 10px;
 
-  img {
+  >* {
     margin-right: 20px;
   }
+}
+
+.playlist-creation-date {
+  color: #AEAEAE;
+  font-size: 11px;
 }
 
 .playlist-items:first-of-type {
@@ -169,4 +177,27 @@ a {
     color: darken(#FB3D00, 5%);
     text-decoration: none;
   }
+}
+
+
+.fa-calendar {
+  margin-right: 5px;
+}
+
+
+/* ==========================================================================
+   Small screen
+   ========================================================================== */
+@media screen and (max-width: 765px) {
+  .playlist-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+
+  >* {
+    margin-right: 0;
+  }
+} 
 }

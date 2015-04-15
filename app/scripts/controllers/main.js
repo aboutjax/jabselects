@@ -41,7 +41,7 @@ angular.module('jabselectsApp')
         for(var i = 0; i < playlists.length; i++) {
 
             SC.oEmbed(playlists[0].uri, document.getElementById('player-playlist'));
-            $('#older-playlist-container').append($('<li class="playlist-item"></li>').html('<img src="' + playlists[i].artwork_url + '"> <a href="' + playlists[i].permalink_url + '">' + playlists[i].title + '</a>'));
+            $('#older-playlist-container').append($('<li class="playlist-item"></li>').html('<img src="' + playlists[i].artwork_url + '"> <a href="' + playlists[i].permalink_url + '">' + playlists[i].title + '</a>' + '<span class="playlist-creation-date"><i class="fa fa-calendar"></i>' + playlists[i].created_at + '</span>'));
         }
     });
 
