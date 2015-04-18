@@ -104,23 +104,31 @@ body {
 
 .header-logo {
   height: 50px;
+  width: 100%;
+  justify-content: center;
   display: flex;
   align-items: center;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .main-header {
   background: #F5F5F5;
   color: #333;
-  padding: 20px;
+  padding: 10px;
   border-radius: 3px 3px 0 0 ;
-  font-weight: 100;
+  font-weight: 400;
+  font-size: 18px;
   margin: 0;
 }
 
-.latest-playlist-container {
-  border: 1px solid #EBEBEB;
+/* ==========================================================================
+   Widget Style
+   ========================================================================== */
+
+.widget {
+  border: 0;
+  box-shadow: 0;
 }
 
 #older-playlist-container {
@@ -157,7 +165,10 @@ body {
 }
 
 .footer {
+  padding: 100px 30px;
+  background: #333;
   display: flex;
+  color: #d7d7d7;
   justify: center;
   text-align: center;
 }
