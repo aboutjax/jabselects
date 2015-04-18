@@ -20,23 +20,12 @@ angular.module('jabselectsApp')
         redirect_uri: "http://example.com/callback.html",
       });
 
-  //   SC.get("/tracks", {
-  //     user_id: 5889536,
-  //     limit: 100
-  // }, function (tracks) {
-
-  //     for (var i = 0; i < tracks.length; i++) {
-
-  //       $('#player-track').append($('<li></li>').html(tracks[i].title));
-
-  //     }
-
-  // });
-
     SC.get("/playlists", {
         user_id: 55692119,
         limit: 100
     }, function (playlists) {
+
+        var firstPlaylistImageurl = playlists[0].artwork_url
 
         for(var i = 0; i < playlists.length; i++) {
 
